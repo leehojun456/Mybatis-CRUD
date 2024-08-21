@@ -15,12 +15,12 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @GetMapping("/")
+    @GetMapping("/user")
     public String getUser() {
 
-        user = userService.getUser(id);
+        //user = userService.getUser(id);
 
-        return "index";
+        return "/user";
     }
 
     @PostMapping
