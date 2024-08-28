@@ -13,7 +13,7 @@
 </nav>
 <div class="container-fluid">
     <div class="row flex">
-        <div class="bg-white w-96 h-dvh border-r">
+        <div class="bg-white min-w-96 h-dvh border-r">
             <div class="panel panel-info">
                 <ul class="">
                     <li class=""><a href="#">개인신상정보수정</a></li>
@@ -22,9 +22,39 @@
                 </ul>
             </div>
         </div>
-        <div class="w-full">
-            <label for="name">성명</label>
-                <input class="" type="text" id="name" name="name"/>
+        <div class="w-full p-8 flex flex-col gap-8">
+            <h1 class="text-2xl font-bold">개인신상</h1>
+            <div class="w-full border flex p-8 gap-8">
+                <div class="border aspect-[2/3] h-96"><img src="" alt="프로필 사진"></div>
+                <div class="w-full flex flex-col gap-8">
+                    <div class="flex gap-8">
+                        <div class="flex flex-col max-w-96 gap-2">
+                            <label for="name" class="font-bold">성명</label>
+                            <input class="border min-h-12 rounded-lg px-4" placeholder="성명" type="text" id="name" name="name"/>
+                        </div>
+                        <div class="flex flex-col max-w-96 gap-2">
+                            <label for="phone" class="font-bold">휴대번호</label>
+                            <input class="border min-h-12 rounded-lg px-4" placeholder="휴대번호" type="text" id="phone" name="phone"/>
+                        </div>
+                        <div class="flex flex-col w-full gap-2">
+                            <label for="email" class="font-bold">이메일</label>
+                            <input class="border min-h-12 rounded-lg px-4" placeholder="example@example.com" type="email" id="email" name="email"/>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-full gap-2">
+                        <label for="address" class="font-bold">주소</label>
+                        <label for="zip"></label>
+                        <div class="flex w-full gap-2">
+                            <input class="border min-h-12 rounded-lg px-4" placeholder="우편번호" type="text" id="zip" name="zip"/>
+                            <input class="border min-h-12 rounded-lg px-4 w-full" placeholder="주소" type="text" id="address" name="address"/>
+                        </div>
+                        <label for="detail"></label>
+                        <input class="border min-h-12 rounded-lg px-4 w-full" placeholder="상세주소" type="text" id="detail" name="detail"/>
+                    </div>
+                </div>
+            </div>
+            <h1 class="text-2xl font-bold">보호자</h1>
+            <div class="border">dfd</div>
         </div>
     </div>
 </div>
